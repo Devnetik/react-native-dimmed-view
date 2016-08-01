@@ -1,0 +1,25 @@
+{
+  "name": "react-native-dimmer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devnetik/react-native-dimmer.git"
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "native",
+    "component"
+  ],
+  "author": "Michael Malura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devnetik/react-native-dimmer/issues"
+  },
+  "homepage": "https://github.com/Devnetik/react-native-dimmer#readme",
+  "description": ""
+}

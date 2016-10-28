@@ -13,7 +13,42 @@ npm install --save react-native-dimmed-view
 
 ## Example
 
-Example coming soon.
+```javascript
+import React, {Component} from 'react';
+import {
+    View,
+    Text,
+    TouchableHighlight
+} from 'react-native';
+import Dimmer from './path/to/react-native-dimmed-view';
+
+export default class Viewport extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            active: false,
+        };
+        this.toggleActive = this.toggleActive.bind(this);
+    }
+    
+    toggleActive() {
+        this.setState({active: !this.state.active});
+    }
+    
+    render() {
+        return (
+            <View>
+                <TouchableHighlight onPress={this.toggleActive}>
+                    <Text>Toggle Dimmer</Text>
+                </TouchableHighlight>
+                <Dimmer darkness={this.state.active ? 0.75 : 0}>
+                    <Text>I am {this.state.active ? 'dimmed' : 'not dimmed'}</Text>
+                </Dimmer>
+            </View>
+        );
+    }
+}
+```
 
 ## Props
 

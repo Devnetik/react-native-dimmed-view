@@ -11,17 +11,11 @@ import {
 	View
 } from 'react-native';
 import Style from './style';
-class dimmer extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			darkness: props.darkness
-		}
-	}
 
+export default class Dimmer extends Component {
 	render() {
 		const darknessStyle = StyleSheet.create({
-			dimmer: {backgroundColor: `rgba(0,0,0,${this.state.darkness})`}
+			dimmer: {backgroundColor: `rgba(0,0,0,${this.props.darkness})`}
 		});
 		return (
 			<View style={[Style.dimmer, darknessStyle.dimmer, this.props.dimmerStyle]}/>
@@ -29,7 +23,7 @@ class dimmer extends Component {
 	}
 }
 
-dimmer.propTypes = {
+Dimmer.propTypes = {
 	darkness   : React.PropTypes.oneOfType([
 		React.PropTypes.number,
 		React.PropTypes.string,
@@ -41,8 +35,6 @@ dimmer.propTypes = {
 		React.PropTypes.object
 	]),
 };
-dimmer.defaultProps = {
+Dimmer.defaultProps = {
 	darkness: 0.5
 };
-
-export default dimmer;

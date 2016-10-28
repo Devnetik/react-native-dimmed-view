@@ -13,16 +13,9 @@ import {
 import Style from './style';
 
 export default class Dimmer extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			darkness: props.darkness
-		}
-	}
-
 	render() {
 		const darknessStyle = StyleSheet.create({
-			dimmer: {backgroundColor: `rgba(0,0,0,${this.state.darkness})`}
+			dimmer: {backgroundColor: `rgba(0,0,0,${this.props.darkness})`}
 		});
 		return (
 			<View style={[Style.dimmer, darknessStyle.dimmer, this.props.dimmerStyle]}/>

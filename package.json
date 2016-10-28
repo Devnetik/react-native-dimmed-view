@@ -19,5 +19,9 @@
     "url": "https://github.com/Devnetik/react-native-dimmer/issues"
   },
   "homepage": "https://github.com/Devnetik/react-native-dimmer#readme",
-  "description": "Darkens the parent view"
+  "description": "Darkens the parent view",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-native": "^0.36.0"
+  }
 }

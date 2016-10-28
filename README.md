@@ -13,7 +13,7 @@ npm install --save react-native-dimmed-view
 
 ## Example
 
-```
+```javascript
 import React, {Component} from 'react';
 import {
     View,
